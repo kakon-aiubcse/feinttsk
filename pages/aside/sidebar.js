@@ -4,7 +4,7 @@ const Sidebarcomponent = () => {
   const pathname = usePathname();
   return (
     <>
-      <div className="flex flex-col h-screen  w-2/12">
+      <div className="flex flex-col h-screen  overflow-hidden fixed top-16">
         <div className="h-1/6 flex items-center justify-between ">
           <span className="text-xl text-gray-700 p-4">Teach</span>
           <img
