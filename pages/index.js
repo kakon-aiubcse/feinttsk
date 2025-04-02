@@ -1,10 +1,18 @@
+import Main from './main';
+import Sidebarcomponent from "./aside/sidebar";
+import Header from "./component/header";
 
 
 export default function Home() {
   return (
     <>
-      <div>Working ? </div>
-      <div className="bg-black text-green-500"> Tailwind Css working?</div>
+      <Header />
+      <div>
+        <aside>
+          <Sidebarcomponent />
+        </aside>
+        <Main/>
+      </div>
     </>
   );
 }
