@@ -18,15 +18,15 @@ const Nav1 = () => {
   const progressWidth = ((activeIndex + 1) / tabs.length) * 60;
 
   return (
-    <div className="flex justify-between bg-gray-50 p-4 border-b-[1px] border-black relative ">
-      <div className="absolute top-[-10px] left-4  w-[1280px] h-[8px] bg-white border rounded-xl border-gray-500">
+    <div className="flex justify-between bg-gray-50 p-4 border-b-[1px] border-black relative left-6">
+      <div className="absolute top-[-10px] left-0  w-[1280px] h-[8px] bg-white border rounded-xl border-gray-500">
         <div
           className="h-full bg-black transition-all duration-300"
           style={{ width: `${progressWidth}%` }}
         ></div>
       </div>
-      <div className="flex ">
-        <ul className="flex space-x-6 items-center text-blue-600 font-thik text-lg  ">
+      <div className="flex ml-2">
+        <ul className="flex space-x-8 items-center text-blue-600 font-thik text-lg  ">
           <li>
             <Link
               href="/?tab=Students"
@@ -114,7 +114,7 @@ const Nav1 = () => {
           </li>
         </ul>
       </div>
-      <div className="flex items-center relative right-16 gap-4">
+      <div className="flex items-center relative right-20 gap-4">
         <img
           src="/dustbin.png"
           alt="Delete"

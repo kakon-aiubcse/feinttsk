@@ -4,12 +4,19 @@ import Chapternav from './chapternav';
 
 const index = () => {
   return (
-    <div>
+    <>
+    <div className='bg-gray-50 pl-5' >
         <Chapterheader/>
-        <Chapternav/>
-      chapter body 
+        
+      
 
     </div>
+    <div className='bg-gray-50 pl-5' >
+    <Chapternav/>
+        
+      
+
+    </div></>
   )
 }
 

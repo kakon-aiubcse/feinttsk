@@ -8,7 +8,7 @@ const index = () => {
   const router = useRouter();
   const { tab } = router.query;
   return (
-    <div className="flex flex-col w-screen fixed h-screen overflow-hidden pr-40">
+    <div className="flex flex-col w-screen fixed h-screen overflow-hidden pr-40 bg-gray-50">
       <Headermain />
       <Nav1 />
       {tab === "Materials" && <Chapter />}
