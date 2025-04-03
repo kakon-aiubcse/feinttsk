@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <div>
         <Header />
-        <div className="flex h-screen">
+        <div className="flex h-screen overflow-hidden">
           <aside className="w-2/12 h-full flex">
             <Sidebarcomponent onShowMain={() => setShowMain(true)} />
           </aside>

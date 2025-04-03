@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 const Sidebarcomponent = ({ onShowMain }) => {
+  
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
