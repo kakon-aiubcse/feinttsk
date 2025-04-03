@@ -118,12 +118,12 @@ const Nav1 = () => {
         <img
           src="/dustbin.png"
           alt="Delete"
-          className="h-6 w-6 border cursor-pointer bg-transparent"
+          className="h-6 w-6  cursor-pointer bg-white"
         />
         <img
           src="/download.png"
           alt="Download"
-          className="h-6 w-6 border cursor-pointer bg-transparent"
+          className="h-6 w-6  cursor-pointer bg-white"
         />
       </div>
     </div>
