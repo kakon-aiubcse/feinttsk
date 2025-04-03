@@ -8,7 +8,7 @@ const Chapter2 = () => {
           <div className="flex space-x-4 ">
             <img src="square.png"  className="h-8 w-8" />
             <img src="files.png" className="h-12 w-12"/>
-            <span className="text-xl font-bold  text-gray-700">Chapters 2 revision notes.pdf</span>
+            <span className="text-lg font-semibold  text-gray-700">Chapters 2 revision notes.pdf</span>
            
           </div>
           <div className="flex items-center space-x-2 relative right-28 ">

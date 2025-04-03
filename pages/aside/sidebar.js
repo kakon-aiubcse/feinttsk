@@ -1,7 +1,12 @@
 import React from "react";
-import { usePathname } from "next/navigation";
-const Sidebarcomponent = () => {
-  const pathname = usePathname();
+import { useState } from "react";
+const Sidebarcomponent = ({ onShowMain }) => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = () => {
+    setIsActive(true);
+    onShowMain(true);
+  };
   return (
     <>
       <div className="flex flex-col h-screen  overflow-hidden fixed top-16">
@@ -17,15 +22,16 @@ const Sidebarcomponent = () => {
             <li className="font-semibold cursor-pointer">Dashboard</li>
 
             <li className="font-semibold">
-              <details className="group" open={pathname === "/"}>
+              <details className="group">
                 <summary className="cursor-pointer flex items-center justify-between">
                   Manage Batch
                   <img src="/dropdown.png" className="h-8 w-8" />
                 </summary>
                 <ul className="flex flex-col flex-1 my-6 space-y-2 h-auto text-gray-600 items-center">
                   <li
-                    className={`w-full py-2 flex items-center justify-center rounded-md  ${
-                      pathname === "/" ? "bg-blue-200" : "bg-white"
+                    onClick={handleClick}
+                    className={`w-full py-2 flex items-center justify-center rounded-md cursor-pointer ${
+                      isActive ? "bg-blue-200" : "bg-white"
                     }`}
                   >
                     All Batches
@@ -44,7 +50,6 @@ const Sidebarcomponent = () => {
         </div>
 
         <div className="h-1/6  p-4 flex flex-col items-start justify-end text-gray-700">
-        
           <ul className="space-y-2 ">
             <li className="font-semibold cursor-pointer">Manage Profile</li>
             <li className="font-semibold cursor-pointer">Settings</li>

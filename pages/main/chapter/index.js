@@ -3,6 +3,7 @@ import Chapterheader from './chapterheader';
 import Chapternav from './chapternav';
 import Chapter1 from './chapter1';
 import Chapter2 from './chapter2';
+import Footer from '@/pages/component/footer';
 
 const index = () => {
   return (
@@ -17,6 +18,7 @@ const index = () => {
     <Chapternav/>
        <Chapter1/> 
       <Chapter2/>
+      <Footer/>
 
     </div></>
   )
